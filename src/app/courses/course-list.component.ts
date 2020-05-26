@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from './course'
-import { CouseService } from './couse.service';
+import { CourseService } from './course.service';
 @Component({
   templateUrl: './course-list.component.html'
 })
@@ -10,7 +10,7 @@ export class CourseListComponent implements OnInit {
 
   _filterBy: string;
 
-  constructor(private courseService: CouseService){
+  constructor(private courseService: CourseService){
 
   }
 
