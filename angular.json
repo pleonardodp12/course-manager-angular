@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "course-manager-angular"
+    }
+  },
+  "defaultProject": "course-manager-angular",
+  "cli": {
+    "analytics": "b1c3c35c-fcbd-4cd4-a01c-c6e11b5af254"
+  }
 }
