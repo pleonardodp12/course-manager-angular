@@ -4,29 +4,22 @@ import { RouterModule } from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http'
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Error404Component } from './courses/error-404/error-404.component';
 import { CourseModule } from './courses/course.module';
-import { CoreModule } from './core/component/core.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    Error404Component,
-    CoreModule
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     CourseModule,
+    CoreModule,
     RouterModule.forRoot([
       {
         path:'',redirectTo:'courses', pathMatch:'full'
-      },
-      {
-        path:'**', component: Error404Component
       }
     ])
   ],
